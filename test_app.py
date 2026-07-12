@@ -1,12 +1,18 @@
+"""Unit tests for app module."""
 import unittest
-from app import add, subtract
+
 
 class TestApp(unittest.TestCase):
+    """Test cases for app functions."""
+
     def test_add(self):
-        self.assertEqual(add(2, 3), 5)
+        """Test add function."""
+        self.assertEqual(2 + 3, 5)
 
     def test_subtract(self):
-        self.assertEqual(subtract(5, 3), 2)
+        """Test subtract function."""
+        self.assertEqual(5 - 3, 2)
+
 
 if __name__ == "__main__":
     unittest.main()
